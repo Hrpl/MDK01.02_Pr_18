@@ -1,0 +1,35 @@
+﻿<Window x:Class="NewApplication.OpenDocumentWindow"
+        Icon="../../Images/logo.ico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewApplication"
+        mc:Ignorable="d"
+        Title="Открыть" Height="250" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="400">
+            <TextBlock Text="Введите название файла (без расширения):" Margin="10"
+               FontSize="14"
+               FontWeight="DemiBold"/>
+            <TextBox Name="fileName" HorizontalAlignment="Left" 
+             Margin="10, 5, 10, 10" 
+             Width="350" 
+             Height="30"
+             ></TextBox>
+            <Button Margin="20"
+            Background="Blue"
+            Foreground="White"
+            Width="130"
+            Click="openButton">Открыть</Button>
+        </StackPanel>
+    </Grid>
+</Window>
